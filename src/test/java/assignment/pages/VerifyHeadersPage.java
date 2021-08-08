@@ -1,5 +1,6 @@
 package assignment.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -17,4 +18,9 @@ public class VerifyHeadersPage  extends BasePAge{
 
     @FindBy(xpath = "//h2[contains(@class, 'site-profile-site-details__h2')]")
     public List<WebElement> topHeader;
+
+    @FindBy(xpath = "//main[@id='main']//div[@id='sp-site-details']//h3[contains(@class,'h4')]")
+    public List<WebElement> headerList;
+
+
 }

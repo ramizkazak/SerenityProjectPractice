@@ -12,7 +12,10 @@ import org.junit.runner.RunWith;
                 "html:target/serenity-report.html",
                 "rerun:target/rerun.txt"},
                 features = "src/test/resources/features",
-                glue = "assignment/step_definitions"
+                glue = "assignment/step_definitions",
+                tags = "",
+                dryRun = true
+
 )
 
 
