@@ -21,5 +21,5 @@ Feature: HWC search verification
       | Languages Spoken by Patients       |
       | Number of Patients Served Annually |
       | Facility Size                      |
-      | Relevant Links                     |
+      | Other Benefits Provided            |
 

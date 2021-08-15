@@ -43,7 +43,7 @@ public class AssignmentTest {
     @When("navigate to sites tab")
     public void navigate_to_sites_tab() {
        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
-       wait.until(ExpectedConditions.textToBe(searchPage.result,"(178)"));
+       wait.until(ExpectedConditions.textToBe(searchPage.result,"(201)"));
         searchPage.sitesTab.click();
 
 
@@ -64,12 +64,15 @@ public class AssignmentTest {
     }
 
     @Then("verify the headers in Details tab:")
-    public void verify_the_headers_in_details_tab(List<String> expectedHeaders) {
+    public void verify_the_headers_in_details_tab(List<String> expectedHeaders) throws InterruptedException {
 
         List<String> actualHeaders = new ArrayList<>();
+        Thread.sleep(3000);
 
-        for(WebElement each: verifyHeadersPage.headerList)
+        for(WebElement each: verifyHeadersPage.headerList) {
             actualHeaders.add(each.getText());
+        }
+
 
         for(int i=0; i<expectedHeaders.size(); i++)
             Assert.assertTrue(actualHeaders.get(i).contains(expectedHeaders.get(i)));
