@@ -32,9 +32,10 @@ public class Driver {
                         case "chrome":
                             WebDriverManager.chromedriver().setup();
                             ChromeOptions options = new ChromeOptions();
-                            options.addArguments("--headless");
-                            options.addArguments("--disable-gpu");
-                            options.addArguments("--window-size=1400,800");
+                            options.setHeadless(true);
+                           // options.addArguments("--headless");
+                            //options.addArguments("--disable-gpu");
+                           // options.addArguments("--window-size=1400,800");
                             driverPool.set(new ChromeDriver(options));
 
 
