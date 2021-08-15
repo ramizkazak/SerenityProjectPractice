@@ -1,0 +1,200 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "user already on homepage via Hooks class",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2021-08-15T02:23:54.345Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5647000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "assignment.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Verify headers",
+        "description": "",
+        "id": "hwc-search-verification;verify-headers",
+        "after": [
+          {
+            "result": {
+              "duration": 570000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "assignment.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 75000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User verify social media page from \"National Health Service Corps\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"National Health Service Corps\"",
+                  "offset": 35
+                }
+              ],
+              "location": "assignment.step_definitions.AssignmentTest.user_verify_social_media_page_from(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 164000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "perform search by keyword \"National Health Service Corps\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"National Health Service Corps\"",
+                  "offset": 26
+                }
+              ],
+              "location": "assignment.step_definitions.AssignmentTest.perform_search_by_keyword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2418000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "navigate to sites tab",
+            "match": {
+              "location": "assignment.step_definitions.AssignmentTest.navigate_to_sites_tab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 258000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "select third item from search result and click",
+            "match": {
+              "location": "assignment.step_definitions.AssignmentTest.select_third_item_from_search_result_and_click()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "navigate to the page",
+            "match": {
+              "location": "assignment.step_definitions.AssignmentTest.navigate_to_the_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3214000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "verify the headers in Details tab:",
+            "match": {
+              "location": "assignment.step_definitions.AssignmentTest.verify_the_headers_in_details_tab(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Point(s) of Contact"
+                ]
+              },
+              {
+                "cells": [
+                  "Hours of Operation"
+                ]
+              },
+              {
+                "cells": [
+                  "Site Type"
+                ]
+              },
+              {
+                "cells": [
+                  "Rural Designation"
+                ]
+              },
+              {
+                "cells": [
+                  "Site Status"
+                ]
+              },
+              {
+                "cells": [
+                  "HPSA Scores"
+                ]
+              },
+              {
+                "cells": [
+                  "Program Approved Services Provided"
+                ]
+              },
+              {
+                "cells": [
+                  "Site Specific Services Provided"
+                ]
+              },
+              {
+                "cells": [
+                  "Languages Spoken by Patients"
+                ]
+              },
+              {
+                "cells": [
+                  "Number of Patients Served Annually"
+                ]
+              },
+              {
+                "cells": [
+                  "Facility Size"
+                ]
+              },
+              {
+                "cells": [
+                  "Other Benefits Provided"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "HWC search verification",
+    "description": "",
+    "id": "hwc-search-verification",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/assigment.feature",
+    "tags": []
+  }
+]
